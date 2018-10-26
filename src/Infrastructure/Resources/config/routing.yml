@@ -1,0 +1,20 @@
+api_index:
+    path: /
+    controller: App\Controller\IndexController::index
+    methods: GET
+
+api_v1_invoice_list:
+    path: /v1/invoices
+    controller: App\Controller\V1\InvoiceController::listAction
+
+api_v1_invoice_get:
+    path: /v1/invoices/{id}
+    controller: App\Controller\V1\InvoiceController::getAction
+
+api_v2_invoice_list:
+    path: /v2/invoices
+    controller: App\Controller\V2\InvoiceController::listAction
+
+api_v2_invoice_get:
+    path: /v2/invoices/{id}
+    controller: App\Controller\V2\InvoiceController::getAction

@@ -1,0 +1,10 @@
+services:
+    app.infrastructure.repository.invoice:
+        class: App\Infrastructure\Repository\InvoiceRepository
+        public: true
+        autowire: true
+
+    app.infrastructure.service.invoice:
+        class: App\Application\Service\InvoiceService
+        public: true
+        autowire: true

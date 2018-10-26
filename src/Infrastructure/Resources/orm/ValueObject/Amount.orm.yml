@@ -1,0 +1,10 @@
+App\Domain\ValueObject\Amount:
+    type: embeddable
+    fields:
+        value:
+            type: integer
+            nullable: true
+        currency:
+            type: string
+            length: 3
+            nullable: true

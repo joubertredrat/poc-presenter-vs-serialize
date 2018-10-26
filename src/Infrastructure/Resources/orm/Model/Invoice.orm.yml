@@ -1,0 +1,34 @@
+App\Domain\Model\Invoice:
+    type: entity
+    repositoryClass: App\Infrastructure\Repository\InvoiceRepository
+
+    lifecycleCallbacks:
+        prePersist: [ forgeCreatedAt ]
+        preUpdate: [ forgeUpdatedAt ]
+
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: auto
+
+    fields:
+        observations:
+            type: text
+            nullable: true
+        status:
+            type: string
+            length: 20
+        createdAt:
+            type: datetime
+        updatedAt:
+            type: datetime
+            nullable: true
+
+    embedded:
+        amountCost:
+            class: App\Domain\ValueObject\Amount
+        amountFee:
+            class: App\Domain\ValueObject\Amount
+        amountDiscount:
+            class: App\Domain\ValueObject\Amount
