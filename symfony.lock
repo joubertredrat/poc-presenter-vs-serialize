@@ -80,14 +80,35 @@
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
+    "jms/metadata": {
+        "version": "1.7.0"
+    },
     "monolog/monolog": {
         "version": "1.23.0"
+    },
+    "nette/php-generator": {
+        "version": "v3.2.0"
+    },
+    "nette/utils": {
+        "version": "v2.5.3"
     },
     "nikic/php-parser": {
         "version": "v4.1.0"
     },
     "ocramius/proxy-manager": {
         "version": "2.1.1"
+    },
+    "phpdocumentor/reflection-common": {
+        "version": "1.0.1"
+    },
+    "phpdocumentor/reflection-docblock": {
+        "version": "4.3.0"
+    },
+    "phpdocumentor/type-resolver": {
+        "version": "0.4.0"
+    },
+    "pimple/pimple": {
+        "version": "v3.2.3"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -173,6 +194,9 @@
     "symfony/http-kernel": {
         "version": "v4.1.6"
     },
+    "symfony/inflector": {
+        "version": "v4.1.7"
+    },
     "symfony/lts": {
         "version": "4-dev"
     },
@@ -218,6 +242,9 @@
     "symfony/process": {
         "version": "v4.1.6"
     },
+    "symfony/property-info": {
+        "version": "v4.1.7"
+    },
     "symfony/routing": {
         "version": "4.0",
         "recipe": {
@@ -225,6 +252,18 @@
             "branch": "master",
             "version": "4.0",
             "ref": "5f514d9d3b8a8aac3d62ae6a86b18b90ed0c7826"
+        }
+    },
+    "symfony/twig-bridge": {
+        "version": "v4.1.7"
+    },
+    "symfony/twig-bundle": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "369b5b29dc52b2c190002825ae7ec24ab6f962dd"
         }
     },
     "symfony/var-dumper": {
@@ -241,6 +280,24 @@
     },
     "symfony/yaml": {
         "version": "v4.1.6"
+    },
+    "tsantos/serializer": {
+        "version": "dev-master"
+    },
+    "tsantos/serializer-bundle": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "0e77ebcee14268963daa83bbf7dbda672876ef07"
+        }
+    },
+    "twig/twig": {
+        "version": "v2.5.0"
+    },
+    "webmozart/assert": {
+        "version": "1.3.0"
     },
     "zendframework/zend-code": {
         "version": "3.3.1"
