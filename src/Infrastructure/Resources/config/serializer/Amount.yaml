@@ -1,0 +1,10 @@
+App\Domain\ValueObject\Amount:
+  properties:
+    value:
+      type: ~
+    currency:
+      type: ~
+
+  virtualProperties:
+    getValueFloat:
+      exposeAs: "valueFloat"
