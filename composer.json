@@ -18,8 +18,7 @@
         "symfony/monolog-bundle": "^3.3",
         "symfony/orm-pack": "^1.0",
         "symfony/yaml": "^4.1",
-        "tsantos/serializer": "dev-master as 3.0",
-        "tsantos/serializer-bundle": "dev-master"
+        "tsantos/serializer-bundle": "^2.0"
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.0",
@@ -84,8 +83,6 @@
     "conflict": {
         "symfony/symfony": "*"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "extra": {
         "symfony": {
             "allow-contrib": true
