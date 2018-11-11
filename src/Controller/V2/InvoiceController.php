@@ -2,6 +2,7 @@
 
 namespace App\Controller\V2;
 
+use App\Domain\Exception\Service\InvoiceService\InvoiceNotFoundException;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use TSantos\Serializer\SerializerInterface;
@@ -51,6 +52,21 @@ class InvoiceController extends Controller
      */
     public function getAction(int $id): JsonResponse
     {
-        return new JsonResponse(['time' => time(), 'id' => $id]);
+        try {
+            $service = $this->get('app.infrastructure.service.invoice');
+            $invoice = $service->invoiceGet($id);
+
+            return new JsonResponse($this->serializer->normalize($invoice));
+        } catch (InvoiceNotFoundException $e) {
+            return new JsonResponse(
+                $e->getMessage(),
+                JsonResponse::HTTP_NOT_FOUND
+            );
+        } catch (\Throwable $e) {
+            return new JsonResponse(
+                $e->getMessage(),
+                JsonResponse::HTTP_INTERNAL_SERVER_ERROR
+            );
+        }
     }
 }
