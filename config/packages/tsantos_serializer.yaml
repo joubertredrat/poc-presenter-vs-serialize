@@ -7,5 +7,5 @@ tsantos_serializer:
     mapping:
         paths:
             -
-                namespace: "App\\Domain\\ValueObject"
+                namespace: "App\\Domain"
                 path: "%kernel.project_dir%/src/Infrastructure/Resources/config/serializer"

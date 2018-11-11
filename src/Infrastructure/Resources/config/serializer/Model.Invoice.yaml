@@ -1,0 +1,12 @@
+App\Domain\Model\Invoice:
+  properties:
+    id: ~
+    observations: ~
+    status: ~
+    amountCost: ~
+    amountFee: ~
+    amountDiscount: ~
+    createdAt:
+      readValueFilter: "$this->serializer->normalize($value, $context)"
+    updatedAt:
+      readValueFilter: "$this->serializer->normalize($value, $context)"
