@@ -17,7 +17,8 @@
         "symfony/lts": "^4@dev",
         "symfony/monolog-bundle": "^3.3",
         "symfony/orm-pack": "^1.0",
-        "symfony/yaml": "^4.1"
+        "symfony/yaml": "^4.1",
+        "tsantos/serializer-bundle": "^2.0"
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.0",
@@ -84,7 +85,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false
+            "allow-contrib": true
         }
     }
 }
